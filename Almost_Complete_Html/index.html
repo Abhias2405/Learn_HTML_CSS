@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- The Meta Tags are used to define the metadata in an HTML document. They help search engines understand the content of your page, improving SEO (Search Engine Optimization). -->
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="keywords" content="html, html tutorials, web development" />
+    <!-- The keywords meta tag is used for SEO purposes. However, modern search engines like Google no longer use it for ranking. -->
+
+    <meta name="robots" content="index, follow" />
+    <!-- The robots meta tag tells search engine crawlers how to index the page. In this case, it's allowed to be indexed and followed. -->
+
+    <title>HTML</title>
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="harry.css" />
+
+    <!-- Link to external JavaScript file -->
+    <script src="harry.js" defer></script>
+    <!-- Add defer to ensure that the JavaScript file is executed after the HTML document has been completely parsed. This helps avoid issues with elements not being loaded before the script runs. -->
+</head>
+
+<body>
+    <div>
+        <h3>Heading</h3>
+        <h1>This is a heading</h1>
+        <!-- Commented-out headers are fine, but consider removing if unnecessary. -->
+        <!-- Heading levels are based on priority, with <h1> being the highest and <h6> the lowest. -->
+        <br />
+        <hr />
+    </div>
+
+    <div>
+        <h3>Paragraph</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex eum a
+            cumque exercitationem est quidem saepe et facilis eligendi obcaecati
+            nesciunt, iure aperiam veritatis! Tempora mollitia provident quasi in
+            similique?
+        </p>
+        <!-- Lorem ipsum is placeholder text commonly used in web design. -->
+        <hr />
+    </div>
+
+    <div>
+        <h3>Website</h3>
+        <a href="https://www.google.com/">Go to Google</a><br />
+        <a href="https://www.facebook.com" target="_blank">Go to Facebook</a>
+        <!-- Use _blank instead of __blank as the target. -->
+
+        <br />
+        <hr />
+        <!-- Clickable image linking to a website -->
+        <a href="https://www.google.com">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Chrome_icon_%28September_2014%29.svg/1200px-Google_Chrome_icon_%28September_2014%29.svg.png"
+                alt="Go to Google" width="100" height="100" />
+        </a>
+        <hr />
+    </div>
+
+    <div>
+        <h3>Image</h3>
+        <img src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072821__340.jpg" alt="Image of nature"
+            width="200" height="400" />
+        <!-- Use consistent width and height attributes without 'px' suffix when using inline styles. -->
+        <hr />
+    </div>
+
+    <div>
+        <h3>List</h3>
+        <ul>
+            <li>Charger</li>
+            <li>Headset</li>
+            <li>Mouse</li>
+            <li>Touchpad</li>
+            <ul>
+                <li>Black</li>
+                <li>Red</li>
+                <li>Green</li>
+                <li>Grey</li>
+            </ul>
+        </ul>
+        <!-- <ul type="circle"> is deprecated. Styling lists is now typically done via CSS. -->
+        <br />
+        <ol type="I">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>PHP</li>
+            <li>Node.js</li>
+        </ol>
+        <!-- Corrected "phh" to "PHP" and "notejs" to "Node.js". -->
+        <hr />
+    </div>
+
+    <div>
+        <h3>Table</h3>
+        <table border="1">
+            <!-- Added a border for visibility. Table styling should ideally be handled with CSS. -->
+            <thead>
+                <tr>
+                    <th>S.no</th>
+                    <th>Name</th>
+                    <th>Weight</th>
+                    <th>Marks</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Abhi</td>
+                    <td>50</td>
+                    <td>95</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Adhi</td>
+                    <td>46</td>
+                    <td>99</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Rahul</td>
+                    <td>86</td>
+                    <td>79</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Ram</td>
+                    <td>75</td>
+                    <td>90</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr />
+    </div>
+
+    <div>
+        <h3>Form</h3>
+        <form action="backend.php" method="POST">
+            <!-- Consider adding a method attribute (e.g., POST or GET) for security and form submission behavior. -->
+
+            <label for="name">Name</label>
+            <input type="text" placeholder="Enter Your name" name="name" id="name" />
+            <!-- "name" attributes should avoid spaces. It was changed to "name". -->
+
+            <br />
+
+            <label for="roll">Roll</label>
+            <input type="number" placeholder="Enter your roll number" name="roll" id="roll" />
+
+            <br />
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+
+            <br />
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="dob" id="dob" />
+
+            <br />
+
+            <label for="eligible">Are You Eligible?</label>
+            <input type="checkbox" name="eligible" id="eligible" />
+
+            <br />
+
+            Gender:
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" />
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female" />
+            <label for="other">Other</label>
+            <input type="radio" name="gender" id="other" />
+
+            <br />
+
+            Write about yourself:
+            <textarea name="about" cols="30" rows="10"></textarea>
+            <!-- Avoid using IDs when not necessary, keeping it simple with just name attributes. -->
+
+            <br />
+
+            <label for="car">Car</label>
+            <select name="car" id="car">
+                <option value="Swift">Swift</option>
+                <option value="i10">i10</option>
+                <option value="i20">i20</option>
+            </select>
+
+            <br />
+
+            <input type="submit" value="Submit Now" />
+            <input type="reset" value="Reset" />
+
+            <br />
+            <hr />
+        </form>
+    </div>
+
+    <div>
+        <h3>Text Formatting</h3>
+        <b>This is bold</b><br />
+        <i>This is italic</i><br />
+        <u>This is underlined</u><br />
+
+        <big>This is big</big><br />
+        <small>This is small</small><br />
+
+        <strong>This is strong</strong><br />
+        <em>This is emphasized</em><br />
+        <hr />
+    </div>
+
+    <div>
+        <h3>Subscript and Superscript</h3>
+        <p>C + O<sub>2</sub> → CO<sub>2</sub></p><br />
+        <p>ax<sup>2</sup> + bx + c</p>
+        <hr />
+    </div>
+
+    <div>
+        <h3>Preformatted Text</h3>
+        <pre>
+        The topic sentence restates the prompt but does not unify the paragraph.
+        The writer includes several irrelevant details.
+      </pre>
+        <hr />
+    </div>
+
+    <div>
+        <h3>IDs and Classes</h3>
+        <div id="mainBox" class="redBg blackBorder">
+            This is the main box
+        </div>
+        <span class="redBg"></span><br />
+        <span class="redBg"></span><br />
+        <span class="myClass myClass2 myClass3">First</span><br />
+        <span class="myClass myClass2 myClass3">Second</span><br />
+        <span class="myClass myClass2 myClass3">Third</span>
+        <hr />
+    </div>
+
+    <div>
+        <h3>Embedding</h3>
+        <iframe width="400" height="300" src="https://www.youtube.com/embed/btD9CSLPrIA"></iframe>
+        <hr />
+    </div>
+</body>
+
+</html>
