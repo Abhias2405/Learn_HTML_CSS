@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'work sans';
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 0px 90px;
+    padding-top: 150px;
+    gap: 70px;
+}
+
+#left {
+    height: 100%;
+    width: 45%;
+    display: flex; /*flex is generally used to write elements in column and row*/
+    flex-direction: column; /* by default its row */
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+
+
+#left h1 {
+    font-size: 80px;
+    font-weight: 500;
+    font-family: 'Work Sans';
+    line-height: 90px;
+}
+
+#bottom-left {
+    /* height: 40%; */
+    width: 100%;
+}
+
+#color {
+    width: fit-content;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: 1px solid black;   
+}
+
+#color h5 {
+    font-size: 20px;
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+#color1, #color2 {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin: 3px;
+}
+
+#color1 {
+    background-color: burlywood;
+}
+
+#color2 {
+    background-color: rgb(232, 137, 186);
+}
+#left h2{
+    margin-top: 50px;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+#left p{
+    font-size: 20px;
+    width: 65%;
+    font-weight: 400;
+    color: #181717;
+    line-height: 30px;
+}
+
+#right {
+    height: 90%;
+    width: 33%;
+}
+#right-top{
+    height: 50px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+#right-top h4{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: work sans;
+}
+#right-top h5{
+    font-size: 16px;
+    font-weight: 600;
+}
+#right-top h5 i{
+    color: gold;
+    border: #181717;
+}
+#right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;/*if image is at front, if image is at background than background cover*/
+}
+
+#black-box{
+    position: absolute;
+    height: 130px;
+    width: 130px;
+    background-color: rgb(46, 47, 52);
+    color: white;
+    border-radius: 50%;
+    right: 17%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 55%;
+}
+#black-box h5{
+    font-size: 20px;
+    font-weight: 300;
+}
+#rotated{
+    position: absolute;
+    left: 48%;
+    bottom: -5%;
+    rotate: -90deg;
+    transform-origin: 0 0;
+    font-weight: 400;
+}
