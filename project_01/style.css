@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue";
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+#nav {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+#nav-part1, #nav-part2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+
+#circle {
+    height: 22px;
+    width: 22px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+#nav-part2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+#nav-part2 h4 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#nav-part2 h4 span {
+    color: rgb(105, 103, 103);
+    margin-left: 25px;
+}
+
+#nav2 {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    gap: 90px;
+}
+
+#nav2 h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+#content {
+    height: calc(100% - 150px);
+    width: 100%;
+}
+#text-content{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+#text-content::-webkit-scrollbar{
+    background-color: transparent;
+    height: 7px;
+    width: 30px;
+
+}
+#text-content::-webkit-scrollbar-thumb{
+    background-color: rgb(255, 119, 0);
+}
+
+.ele{
+    flex-shrink: 0;
+    height: 100%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ele h1{
+    font-family: "Kalnia Glaze", serif;
+    font-size: 100px;
+    font-weight: 100;
+    color: antiquewhite;
+}
+#img-content{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+}
+#img-content img{
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+#img-content::-webkit-scrollbar{
+    display: none;
+}
