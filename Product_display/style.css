@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    background-color: #f8f8f8;
+    position: relative;
+    padding-top: 0.1px;
+    /* here we have given padding top as in our website we have nav with some top margin so if we give margin top to the nav it will also bring down the main so we need to give a small padding to main  */
+}
+
+#nav {
+    height: 11vh;
+    width: 100%;
+    margin-top: 40px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav h1{
+    height: 100%;
+    width: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: monument;
+    font-size: 35px;
+    letter-spacing: -1px;
+}
+#nav h2{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid black;
+    font-size: 26px;
+    font-weight: 400;
+}
+#nav h2:nth-last-child(1){
+    width: 10%;
+}
+#nav h2:nth-last-child(2){
+    width: 29%;
+}
+#center{
+    height: 90%;
+    width: 100%;
+    padding: 4vw;
+    position: relative;
+    background-color: aquamarine;
+}
+#content{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+#content video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#overlay{
+    height: 60%;
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+    padding: 3vw;
+    background-color: aqua;
+}
+#one{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    margin-bottom: 2vw;
+}
+#one h1{
+    font-family: monument ;
+    font-size: 3vw;
+    font-weight: 400;
+
+}
+#one h2{
+    font-size: 1vw;
+    padding: 2vw .42vw;
+    border-radius: 50%;
+    border: 2px solid white ;
+
+}
+#two{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid white;
+}
+#two h4{
+    font-size: 1.3vw;
+    font-weight: 300 ;
+}
