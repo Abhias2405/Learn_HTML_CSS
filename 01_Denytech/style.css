@@ -80,3 +80,25 @@ html, body{
     width: 100%;
     text-align: center;
 }
+
+
+img{
+    height: 400px;
+    width: 370px;
+    object-fit: cover;
+    object-position: top;
+    position: absolute;
+    border-radius: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#img1{
+    transform: translate(-50%, -50%) rotate(-30deg);
+}
+#img2{
+    transform: translate(-50%, -50%) rotate(-20deg);
+}
+#img3{
+    transform: translate(-50%, -50%) rotate(-10deg);
+}
