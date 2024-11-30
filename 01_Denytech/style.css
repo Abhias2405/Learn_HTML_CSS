@@ -102,3 +102,28 @@ img{
 #img3{
     transform: translate(-50%, -50%) rotate(-10deg);
 }
+
+#btm-left{
+    position: absolute;
+    bottom: 4%;
+    left: 3%;
+    font-size: 17px;
+    font-weight: 200;
+}
+
+#main>i{
+    position: absolute;
+    bottom: 4%;
+    left: 50%;
+    font-size: 25px;
+    font-weight: 200;
+}
+
+#btm-right{
+    position: absolute;
+    bottom: 4%;
+    right: 3%;
+    font-size: 17px;
+    font-weight: 200;
+    justify-content: space-between;
+}
