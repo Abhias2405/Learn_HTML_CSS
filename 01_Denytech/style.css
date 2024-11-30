@@ -69,7 +69,6 @@ html, body{
     color: white;
 }
 
-
 #main>h1{
     font-size: 150px;
     text-transform: uppercase;
@@ -127,3 +126,4 @@ img{
     font-weight: 200;
     justify-content: space-between;
 }
+
