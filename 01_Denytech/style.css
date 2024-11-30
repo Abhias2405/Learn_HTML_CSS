@@ -62,3 +62,21 @@ html, body{
     font-weight: 600;
 
 }
+
+#btn2{
+    border: none;
+    background-color: orangered;
+    color: white;
+}
+
+
+#main>h1{
+    font-size: 150px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
