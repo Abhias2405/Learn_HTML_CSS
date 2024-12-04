@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: aeonik;
 }
+
 html, body{
     height: 100%;
     width: 100%;
@@ -13,12 +14,54 @@ html, body{
     height: 100%;
     width: 100%;
 }
-#intro{
-    height: 40%;
+
+#nav{
+    position: fixed;
     width: 100%;
-    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 30px 40px;
 }
+
+#nav h3{
+    background-color: black;
+    color: azure;
+    padding: 15px 25px;
+    font-size: 20px;
+    margin-left: 5px;
+    border-radius: 50px;
+}
+
+#intro{
+    height: 45%;
+    width: 100%;
+    padding: 10px 50px;
+}
+
 #intro h1{
     font-size: 130px;
+    letter-spacing: -3px;
     line-height: 120px;
+}
+
+#place {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+#place h3, #place h4{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#hero-img{
+    height: 88%;
+    width: 100%;
+    background-color: beige;
+    background-image: url(https://images.unsplash.com/photo-1719937050640-71cfd3d851be?q=80&w=1772&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) ;
+    background-size: cover;
 }
